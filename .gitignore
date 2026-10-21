@@ -7,3 +7,4 @@ __pycache__/
 *.pyc
 dados/
 entrega-gestores/
+scripts/_*.py
