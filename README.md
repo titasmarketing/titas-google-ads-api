@@ -33,3 +33,8 @@ uv run --python 3.12 --with-requirements requirements.txt python scripts/ga4_tes
 - A conta de serviço `api-titas@fiery-splice-511017-j6.iam.gserviceaccount.com` entra na MCC como usuário e enxerga todas as contas de clientes; o ID da MCC vai no cabeçalho `login-customer-id`.
 - Limite diário do Google Ads depende do nível de acesso do projeto (Explorer: 2.880 operações/dia em contas reais; relatórios contam). Confira em console.cloud.google.com/google/ads-apis/overview.
 - No GA4 não existe MCC: a conta de serviço só enxerga as contas do Analytics em que foi adicionada como Leitor.
+
+## Dados para analisar no Claude Desktop
+
+O Claude Desktop lê pastas anexadas, mas não roda comandos. Por isso os dados são baixados antes, aqui, e cada pasta traz um `_LEIAME.md`.
+Peça ao Claude Code: "atualize os dados do Google" (ou rode o script de download). Depois anexe a pasta do cliente ao projeto dele no Claude Desktop e cole o conteúdo de `INSTRUCOES_CLAUDE_DESKTOP.md` nas instruções do projeto.
