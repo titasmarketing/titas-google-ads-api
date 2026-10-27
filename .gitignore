@@ -8,3 +8,4 @@ __pycache__/
 dados/
 entrega-gestores/
 scripts/_*.py
+.DS_Store
